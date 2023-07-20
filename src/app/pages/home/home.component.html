@@ -1,0 +1,8 @@
+<div class="relative w-full" *ngIf="loading == false">
+    <div class="sticky top-3 p-4">
+        <button active="selectedLanguage == 'Spanish'" (click)="selectLanguage('English')" class="p-3 rounded text-white bg-black hover:bg-white hover:text-black">English</button>
+        <button active="selectedLanguage == 'English'"
+         (click)="selectLanguage('Spanish')" class="p-3 rounded ml-3 text-white bg-black hover:bg-white hover:text-black active:bg-white active:text-black">Spanish</button>
+    </div>
+    <img class="w-full" src="{{ photo }}" />
+</div>
